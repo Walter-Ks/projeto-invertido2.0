@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=EB+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+
+        <h1 id="title">Regulagem de invertido</h1>
+        <br>
+        <h2 id="txt1">1. Digite aqui o tamanho da ranhura:</h2>
+            <input class="inp" type="number" id="inp1">
+        <br>
+        <h2 id="txt2">2. Digite aqui o tamanho com duas ranhuras,sendo<br>uma delas com a chapa invertidas:</h2>
+            <input class="inp" type="number" id="inp2">
+            <br>
+        <h2 id="txt3">3. Agora digite o tamanho <span>INTERNO</span> da chapa:</h2>  
+            <input class="inp" type="number" id="inp3">
+
+        <h2 id="selecao">4. No invertido, com qual das imagens se parece estar igual sua situação:</h2>
+             <form>
+                <input onclick="op1()" class="chapa" name="sel" id="Egirar+" type="radio">
+                <label for="Egirar+"><img src="img/1.jpg"></label>
+
+                <input onclick="op2()" class="chapa" name="sel" id="Egirar-" type="radio">
+                <label for="Egirar-"><img src="img/2.jpg"></label>
+
+                <input onclick="op3()" class="chapa" name="sel" id="Rgirar+" type="radio">
+                <label for="Rgirar+"><img src="img/3.jpg"></label>
+
+                <input onclick="op4()" class="chapa" name="sel" id="Rgirar-" type="radio">
+                <label for="Rgirar-"><img src="img/4.jpg"></label>
+            </form>
+            <br>
+        <button id="calcular">Calcular</button>
+        <div id="esconder">
+            <div id="resultado"></div>
+            <div id="check"></div>
+        </div>
+        </div>
+
+    
+
+<script src="script.js"></script>
+</body>
+</html>
