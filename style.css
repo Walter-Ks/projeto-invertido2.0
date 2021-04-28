@@ -89,9 +89,7 @@ button:hover{
 }
 
 @media only screen and (max-width: 1140px){
-    body{
-        background-color: yellow;
-    }
+   
 
     #container{
         width: 90%;
